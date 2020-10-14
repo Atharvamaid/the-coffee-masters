@@ -2,6 +2,7 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>The Coffee Masters</title>
     <link rel="stylesheet" href="./main.css">
@@ -9,11 +10,19 @@
 </head>
 <body>
     <div id="main-container">
+        
         <div id="banner"></div>
-        <nav>
-            <div class="nav-item" id="nav1"><a href="#about-us">About Us</a></div>
-            <div class="nav-item" id="nav2"><a href="#why-us">Why Us?</a></div>
-            <div class="nav-item" id="nav3"><a href="#contact-us">Contact Us</a></div>
+        <nav class="navbar navbar-expand-md sticky-top navbar-light" style="width: 100%; background-color: #f2f2f2;">
+            <a href="#" class="navbar-brand">The Coffee Masters</a>
+            <button class="navbar-toggler" data-toggle="collapse" data-target="#navres"><span class="navbar-toggler-icon"></span></button>
+            <div class="collapse navbar-collapse" id="navres">
+                <ul class="navbar-nav ml-auto">
+                    <li class="nav-item mx-3"><a class="nav-link" href="">Home</a></li>
+                    <li class="nav-item mx-3"><a class="nav-link"  href="">Why Us</a></li>
+                    <li class="nav-item mx-3"><a class="nav-link"  href="">About</a></li>
+                    <li class="nav-item mx-3"><a class="nav-link"  href="">Contact</a></li>
+                </ul>
+            </div>
         </nav>
         <div id="pages-container">
             <div id="about-us" class="page">
@@ -24,21 +33,119 @@
                 <p>
                     Lorem, ipsum dolor sit amet consectetur adipisicing elit. Molestiae velit a voluptas inventore repellendus laborum illum saepe id in, alias perferendis ea sequi ratione ipsa voluptatem? Nostrum reprehenderit tempora dolore facere vitae? Voluptatum, ut. Nisi dolor eligendi magnam nemo eius fugit, molestiae tempore, nihil necessitatibus inventore consectetur commodi expedita facere quia, quidem debitis. Rerum ab dignissimos molestias quisquam fugiat placeat perspiciatis maiores inventore ex libero cum eveniet quidem, officiis nisi ipsa laboriosam natus aut quia ut reiciendis assumenda dicta similique. Sapiente nobis aliquid, tempore tempora ipsa at optio dolor consectetur! Voluptatum ea necessitatibus officiis, neque placeat saepe assumenda possimus exercitationem, culpa a vitae fuga. Repellendus, ut numquam quidem nam suscipit dolores aliquam. Fuga nostrum nisi ipsa necessitatibus eum rem aspernatur consequatur. Porro quibusdam non voluptates obcaecati. Quod, minima? Officiis in sapiente dolorum, ullam eos dolore repellat tempora deleniti nihil harum magni quos quam esse accusamus dolorem veniam molestias enim necessitatibus, autem optio beatae, nobis quo illum cupiditate? Pariatur, hic reiciendis? Atque voluptates minima, nulla, temporibus facilis enim iste exercitationem eaque rem veritatis harum ratione nobis. Iusto ad labore laudantium eveniet, ab incidunt? 
                 </p>
-                <p>
-                    Lorem, ipsum dolor sit amet consectetur adipisicing elit. Commodi unde quas, numquam placeat quo dolores eaque nihil cum et esse iure ducimus voluptatibus molestias velit voluptatum ea! Placeat, quibusdam. Nobis saepe dolor beatae nemo doloribus aliquam sunt fuga laborum veritatis eos asperiores nam a, sequi porro culpa! Incidunt aliquam, aut sequi, velit, ipsa ipsam unde dolore ea eveniet numquam minima dicta odit alias repellendus. Nisi totam explicabo fugit illum accusamus neque earum minima, possimus asperiores! Fugiat quidem sed, eius perferendis enim eaque reiciendis, optio ab nobis delectus nisi quia laboriosam molestiae. Minima recusandae, alias sapiente iure accusamus velit non. Fugiat.
-                </p>
+                <div class="container-fluid">
+                    <div class="row">
+                        <div class="col-md-4">
+                            <div class="card m-2" style="width:400px">
+                                <img class="card-img-top" src="./assets/photo-1495474472287-4d71bcdd2085.jpg"  width="100%" alt="Card image">
+                                <div class="card-body">
+                                  <h4 class="card-title">John Doe</h4>
+                                  <p class="card-text">Some example text.</p>
+                                  <a href="#one" data-toggle="collapse" class="btn btn-primary">See Profile</a>
+                                  <div id="one" class="collapse">
+                                    Lorem ipsum dolor sit amet consectetur adipisicing elit. Maiores tenetur ullam magnam quos esse, saepe amet dolores fugit vel praesentium soluta aspernatur facilis natus repellat, cumque tempore ab beatae dolore totam quaerat nihil excepturi molestiae? Excepturi nam quasi odit vitae blanditiis fugiat expedita, sit eligendi tempore quidem doloribus quam doloremque.
+                                    </div>
+                                </div>
+                              </div>
+                        </div>
+                        <div class="col-md-4">
+                            <div class="card m-2" style="width:400px">
+                                <img class="card-img-top" src="./assets/photo-1495474472287-4d71bcdd2085.jpg"  width="100%" alt="Card image">
+                                <div class="card-body">
+                                  <h4 class="card-title">John Doe</h4>
+                                  <p class="card-text">Some example text.</p>
+                                  <a href="#two" data-toggle="collapse" class="btn btn-primary">See Profile</a>
+                                  <div id="two" class="collapse">
+                                    Lorem ipsum dolor sit amet consectetur adipisicing elit. Facilis dolorum magnam quidem beatae ad odit provident, commodi eos, harum laboriosam voluptate molestiae officiis nihil fuga velit ipsam excepturi voluptatum, saepe eaque numquam. Ab ea officia recusandae consequatur, molestiae fuga debitis? Laboriosam aspernatur, veritatis minus quia ex sunt et atque voluptate.
+                                    </div>
+                                </div>
+                              </div>
+                        </div>
+                        <div class="col-md-4">
+                            <div class="card m-2" style="width:400px">
+                                <img class="card-img-top" src="./assets/photo-1495474472287-4d71bcdd2085.jpg"  width="100%" alt="Card image">
+                                <div class="card-body">
+                                  <h4 class="card-title">John Doe</h4>
+                                  <p class="card-text">Some example text.</p>
+                                  <a href="#three" data-toggle="collapse" class="btn btn-primary">See Profile</a>
+                                  <div id="three" class="collapse">
+                                    Lorem ipsum, dolor sit amet consectetur adipisicing elit. Perferendis odio officia earum in, cum impedit eum enim vitae libero. Consequuntur, cum sit magni repudiandae corporis cumque maiores commodi recusandae fuga voluptatem eius soluta placeat assumenda accusamus laudantium molestiae magnam, laborum veritatis dicta maxime molestias voluptatum in. Et quisquam dolores eum!
+                                    </div>
+                                </div>
+                              </div>
+                        </div>
+                        
+                    </div>
+                </div>
             </div>
             <div id="why-us" class="page">
-                <h1>Why us?</h1>
+                <h1 style="font-size: 50px;">Why us?</h1>
+                <div id="demo" class="carousel slide" data-ride="carousel">
+
+                    <!-- Indicators -->
+                    <ul class="carousel-indicators">
+                      <li data-target="#demo" data-slide-to="0" class="active"></li>
+                      <li data-target="#demo" data-slide-to="1"></li>
+                      <li data-target="#demo" data-slide-to="2"></li>
+                    </ul>
+                  
+                    <!-- The slideshow -->
+                    <div class="carousel-inner">
+                      <div class="carousel-item active">
+                        <img src="./assets/photo-1447933601403-0c6688de566e.jpg" width="500px" alt="Los Angeles">
+                      </div>
+                      <div class="carousel-item">
+                        <img src="./assets/photo-1495474472287-4d71bcdd2085.jpg" width="500px" alt="Chicago">
+                      </div>
+                      <div class="carousel-item">
+                        <img src="./assets/photo-1504630083234-14187a9df0f5.jpg" width="500px" alt="New York">
+                      </div>
+                    </div>
+                  
+                    <!-- Left and right controls -->
+                    <a class="carousel-control-prev" href="#demo" data-slide="prev">
+                      <span class="carousel-control-prev-icon"></span>
+                    </a>
+                    <a class="carousel-control-next" href="#demo" data-slide="next">
+                      <span class="carousel-control-next-icon"></span>
+                    </a>
+                  
+                  </div>
+                  <p style="font-size: 25px;">We are the best coffee makers in the world ! Do try our coffee .</p>
                 
             </div>
             <div id="contact-us" class="page">
-                <h1>Contact Us</h1>
+                <h1 style="width: 100%;">Contact Us</h1>
+                <form class="border shadow rounded-lg p-3" style="width: 100%;">
+                    <div class="form-group">
+                      <label for="email">Email address:</label>
+                      <input type="email" class="form-control" placeholder="Enter email" id="email">
+                    </div>
+                    <div class="form-group">
+                      <label for="pwd">Password:</label>
+                      <input type="password" class="form-control" placeholder="Enter password" id="pwd">
+                    </div>
+                    <div class="form-group form-check">
+                      <label class="form-check-label">
+                        <input class="form-check-input" type="checkbox"> Remember me
+                      </label>
+                    </div>
+                    <button type="submit" class="btn btn-primary">Submit</button>
+                  </form>
             </div>
         </div>
         <footer>
             &copy; 2020 The Coffee Masters
         </footer>
     </div>
+
+
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+
+<!-- Popper JS -->
+<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.0/umd/popper.min.js"></script>
+
+<!-- Latest compiled JavaScript -->
+<script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
 </body>
 </html>
